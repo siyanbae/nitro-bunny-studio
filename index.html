@@ -1,79 +1,299 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>개인정보처리방침 | Nitro Bunny Studio</title><meta name="description" content="소설 리더 - TXT·TTS의 개인정보처리방침 및 지원 연락처">
-<style>body{margin:0;background:#f5f4ee;color:#193b33;font:17px/1.8 system-ui,sans-serif}main{max-width:800px;margin:auto;padding:40px 24px 80px}h1{font-size:2rem;line-height:1.4}h2{margin-top:2.2em;font-size:1.3rem}h3{font-size:1.1rem}a{color:#14664f;overflow-wrap:anywhere}blockquote{margin:24px 0;padding:12px 20px;border-left:4px solid #37735f;background:#fff}code{overflow-wrap:anywhere}li{margin:6px 0}@media(prefers-color-scheme:dark){body{background:#14221e;color:#e7eee9}a{color:#99d9bc}blockquote{background:#22352e}}</style></head>
-<body><main><header><p>Nitro Bunny Studio</p><nav aria-label="페이지 안내"><a href="#support">지원 문의</a></nav></header><h1 id="txttts">소설 리더 - TXT·TTS 개인정보처리방침</h1>
-<blockquote>
-<p>상태: 공개용 방침. 실제 배포 설정 변경 시 재검토</p>
-<p>마지막 검토일: 2026-10-25</p>
-</blockquote>
-<h2 id="section">1. 적용 범위</h2>
-<p>이 개인정보처리방침은 Android 앱 <strong>소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</strong>(<code>com.siyan.novel_reader</code>)에 적용된다.
-Novel Reader는 사용자가 선택한 로컬 TXT 파일을 읽고 Android의 기기 내 TTS 기능으로 낭독하는
-오프라인 우선 앱이다. 앱은 계정을 만들거나 자체 분석·크래시 수집 서비스를 사용하지 않는다.</p>
-<h2 id="section-1">2. 앱이 기기에 저장하는 정보</h2>
-<p>앱은 기능 제공을 위해 다음 정보를 앱 전용 저장소에 보관한다.</p>
-<ul>
-<li>사용자가 Android 시스템 파일 선택기로 고른 TXT의 content URI, 표시명, 파일명, 크기,
-수정 시각 및 문자 인코딩 정보</li>
-<li>읽기 위치, 진행률, 북마크와 짧은 주변 문맥</li>
-<li>다음 열기 속도를 높이기 위해 앱 전용 캐시에 저장하는 TXT 본문의 정규화된 파싱 사본</li>
-<li>앱 언어, 테마, 모든 TXT에 공통인 읽기/TTS 설정, 잠금 화면 미리보기 설정</li>
-<li>Google UMP가 저장하는 광고 개인정보 선택 상태</li>
-</ul>
-<p>TXT 원본은 읽기 전용으로 취급하며 앱이 수정하거나 삭제하지 않는다. 문서 내용, 파일명,
-content URI, 검색어 및 북마크 발췌는 개발자 서버나 광고 요청으로 전송하지 않는다.</p>
-<h2 id="section-2">3. 광고 서비스가 처리하는 정보</h2>
-<p>앱은 라이브러리와 설정 화면에 배너 광고를 표시하기 위해 Google Mobile Ads SDK(AdMob)와
-Google User Messaging Platform(UMP)을 사용한다. Google Mobile Ads SDK는 광고 제공,
-광고 성과 분석, 부정행위 방지·보안 목적을 위해 다음 정보를 자동으로 수집하고 Google과
-공유할 수 있다.</p>
-<ul>
-<li>IP 주소(기기의 대략적인 위치 추정에 사용될 수 있음)</li>
-<li>앱 실행, 탭, 광고 조회 등 앱/광고 상호작용</li>
-<li>앱 및 SDK의 실행 시간, 중단, 에너지 사용량 등 진단 정보</li>
-<li>Android 광고 ID, App Set ID 및 적용 가능한 기기·계정 관련 식별자</li>
-</ul>
-<p>이 정보는 전송 중 TLS로 암호화된다. Android 광고 ID는 Android 설정에서 재설정하거나
-삭제할 수 있다. 지역과 관련 법령에 따라 UMP 동의 화면이 표시되며, 필요한 경우 설정의
-개인정보 옵션에서 선택을 다시 관리할 수 있다. 광고 동의 또는 광고 로드 실패 여부와
-관계없이 로컬 TXT 읽기 기능은 사용할 수 있다.</p>
-<p>Google의 데이터 처리에는 Google의 개인정보처리방침과 광고 관련 약관이 적용된다.</p>
-<ul>
-<li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li>Google의 광고 기술 사용 안내: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
-</ul>
-<h2 id="section-3">4. 권한과 접근</h2>
-<ul>
-<li>파일: Android 시스템 파일 선택기가 부여한 읽기 권한만 사용한다. 광범위한 저장소 권한을
-요청하지 않는다.</li>
-<li>알림 및 foreground media service: TTS 재생 제어와 화면이 꺼진 동안의 연속 재생에 사용한다.</li>
-<li>인터넷 및 네트워크 상태: AdMob/UMP의 동의 정보와 배너 광고를 요청하는 데 사용한다.</li>
-<li>광고 식별자: Google Mobile Ads SDK의 광고 제공·측정·부정행위 방지에 사용될 수 있다.</li>
-</ul>
-<h3 id="android">Android 음성 엔진</h3>
-<p>앱은 사용자가 선택한 Android TTS 엔진에 낭독할 텍스트를 전달한다. 오프라인 음성은 기기에서
-처리되지만 네트워크가 필요한 음성을 선택하면 해당 엔진 제공업체가 텍스트를 외부에서 처리할
-수 있다. 처리 및 보유 조건은 해당 엔진 제공업체의 방침에 따른다. 문서를 기기 밖으로 보내지
-않고 들으려면 Android 음성 설정에서 오프라인 음성을 사용해야 한다.</p>
-<h2 id="section-4">5. 보유와 삭제</h2>
-<p>로컬 독서 기록과 설정은 사용자가 앱 데이터를 삭제하거나 앱을 제거할 때까지 기기에
-보관된다. 파싱 사본은 Android가 앱 캐시를 정리할 때 먼저 삭제될 수 있다. 최근 문서에서
-항목을 제거하면 해당 앱 기록과 파싱 캐시는 삭제되며 원본 TXT는 유지된다.
-설정 초기화는 전역 설정만 초기화하고 문서, 읽기 위치와 북마크는 유지한다.</p>
-<p>AdMob/UMP가 처리하는 정보의 보유 및 삭제는 Google의 정책과 사용자의 Google/Android 광고
-설정에 따른다. 앱은 사용자 계정을 제공하지 않는다. 개인정보 관련 문의 또는 앱이 보유한
-정보의 삭제 방법에 관한 요청은 아래 연락처로 접수할 수 있다.</p>
-<h2 id="section-5">6. 아동의 개인정보</h2>
-<p>이 앱은 13세 이상 일반 독자를 대상으로 하며, 13세 미만 아동을 대상으로 설계하거나
-홍보하지 않는다. 아동의 개인정보 처리와 관련한 우려 또는 문의는 아래 연락처로 접수할 수 있다.</p>
-<h2 id="section-6">7. 방침 변경</h2>
-<p>수집 항목, SDK 또는 처리 목적이 바뀌면 앱과 Google Play에 게시된 방침 및 데이터 보안 답변을
-함께 갱신한다. 중요한 변경은 앱 업데이트 안내 등 합리적인 방법으로 알린다.</p>
-<h2 id="section-7">8. 개발자 및 문의</h2>
-<ul>
-<li>앱: 소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</li>
-<li>개발자명: Nitro Bunny Studio</li>
-<li>개인정보 문의: nitrobunny.studio@gmail.com</li>
-<li>시행일: 2026-10-25</li>
-</ul>
-<section id="support"><h2>지원 문의</h2><p>앱 사용 및 개인정보 문의: <a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p><p>이 안내 페이지는 GitHub Pages에서 제공됩니다. 웹사이트 접속 정보 처리는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고해 주세요.</p></section></main></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Nitro Bunny Studio</title>
+<meta name="description" content="Novel Reader - TXT &amp; TTS privacy policy in English, 한국어, 日本語, ไทย, Français, Deutsch and Español.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif;line-height:1.8;color:#193b33;background:#f5f4ee}*{box-sizing:border-box}body{margin:0}main{max-width:850px;margin:auto;padding:32px 24px 80px}header{border-bottom:1px solid #9daf9f;padding-bottom:24px}.brand{font-weight:750;font-size:1.15rem}nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}a{color:#14664f;overflow-wrap:anywhere}nav a{display:inline-flex;min-height:48px;min-width:48px;align-items:center;justify-content:center;padding:8px 14px;border:1px solid #658a78;border-radius:9px;text-decoration:none;background:#fff}nav a[aria-current="true"]{background:#245b46;color:#fff;font-weight:700;border-width:3px;text-decoration:underline;text-underline-offset:5px}a:focus-visible{outline:3px solid #bc5700;outline-offset:4px}h1{font-size:clamp(1.6rem,5vw,2.25rem);line-height:1.4;margin-top:36px}h2{font-size:1.3rem;line-height:1.5;margin-top:2em}.app-name{font-weight:650}.date{font-size:.92rem}li{margin:8px 0}article{overflow-wrap:anywhere}.js .policy{display:none}.js .policy.active{display:block}noscript{display:block;padding:16px 0}@media(prefers-color-scheme:dark){:root{background:#14221e;color:#e7eee9}a{color:#99d9bc}nav a{background:#22352e;color:#e7eee9;border-color:#99b8a7}nav a[aria-current="true"]{background:#b8e6cb;color:#14221e}a:focus-visible{outline-color:#ffb869}}@media(prefers-reduced-motion:no-preference){a{transition:background-color .12s}}@media(max-width:400px){main{padding:24px 16px 64px}nav a{padding:8px 10px}}
+</style>
+</head>
+<body><main><header><div class="brand">Nitro Bunny Studio</div><nav aria-label="Language / 언어"><a href="#en" lang="en" hreflang="en" data-lang="en">English</a><a href="#ko" lang="ko" hreflang="ko" data-lang="ko">한국어</a><a href="#ja" lang="ja" hreflang="ja" data-lang="ja">日本語</a><a href="#th" lang="th" hreflang="th" data-lang="th">ไทย</a><a href="#fr" lang="fr" hreflang="fr" data-lang="fr">Fran&#231;ais</a><a href="#de" lang="de" hreflang="de" data-lang="de">Deutsch</a><a href="#es" lang="es" hreflang="es" data-lang="es">Espa&#241;ol</a></nav></header>
+<noscript>Choose a language above. All translations are available below without JavaScript.</noscript>
+<article class="policy" id="en" lang="en" data-title="Privacy Policy">
+<h1>Privacy Policy</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">Last reviewed: <time datetime="2026-10-25">2026-10-25</time> · Effective date: 2026-10-25</p>
+<section aria-labelledby="en-section-0"><h2 id="en-section-0">1. Scope</h2>
+<p>This policy applies to Nitro Bunny Studio&#39;s Android app 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS (com.siyan.novel_reader). The app is an offline-first tool for reading local TXT files you select and listening with Android text-to-speech. It has no user accounts or developer-operated analytics or crash collection service.</p>
+</section>
+<section aria-labelledby="en-section-1"><h2 id="en-section-1">2. Information stored on your device</h2>
+<p>The app stores the following in app-specific storage to provide its features:</p>
+<ul><li>Selected TXT content URIs, display names, filenames, sizes, modification times, and character encodings</li><li>Reading positions, progress, bookmarks, and short surrounding text</li><li>A normalized, parsed cache of TXT contents for faster reopening</li><li>App language and theme, shared reading and TTS preferences, and lock-screen preview settings</li><li>Advertising privacy choices stored by Google UMP</li></ul>
+<p>Original TXT files are read-only and are never edited or deleted. Document contents, filenames, URIs, search terms, and bookmark excerpts are not sent to a developer server or in advertising requests. See below for processing by the speech engine you choose.</p>
+</section>
+<section aria-labelledby="en-section-2"><h2 id="en-section-2">3. Information processed by advertising services</h2>
+<p>Library and settings banners use the Google Mobile Ads SDK (AdMob) and Google User Messaging Platform (UMP). Google may automatically collect and share the following for advertising, performance measurement, fraud prevention, and security:</p>
+<ul><li>IP addresses and approximate location inferred from them</li><li>App and ad interactions, such as launches, taps, and ad views</li><li>Diagnostics, such as app/SDK runtime, interruptions, and energy use</li><li>Android advertising ID, App Set ID, and applicable device- or account-related identifiers</li></ul>
+<p>This information is encrypted in transit using TLS. You can reset or delete your advertising ID in Android settings. UMP consent messages appear according to your region and applicable requirements; where required, privacy options in app settings let you manage your choices. Local TXT reading remains available regardless of consent or ad loading failures. Google&#39;s processing is governed by the policies below and applicable advertising terms.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://policies.google.com/technologies/ads">How Google uses advertising technologies</a></li></ul>
+</section>
+<section aria-labelledby="en-section-3"><h2 id="en-section-3">4. Permissions and speech engines</h2>
+<ul><li>Files: only read access granted by the system file picker is used; broad storage permission is not requested.</li><li>Notifications and a foreground media playback service: used for playback controls and continuous speech with the screen off.</li><li>Internet and network state: used for AdMob/UMP requests. Advertising identifiers may be used for ad delivery, measurement, and fraud prevention.</li></ul>
+<p>The app passes text to your selected Android TTS engine for speech. Offline voices process it on the device; if you choose a network voice, the engine provider may process text externally. That provider&#39;s policy governs processing and retention. Choose an offline voice to listen without sending document text off the device.</p>
+</section>
+<section aria-labelledby="en-section-4"><h2 id="en-section-4">5. Retention and deletion</h2>
+<p>Local records and settings remain until you clear app data or uninstall the app. Android may clear the parsed cache earlier. Removing a recent document deletes its app records and parsed cache, while preserving the source TXT. Resetting settings resets only global preferences and preserves documents, reading positions, and bookmarks. Google policies and your Google/Android ad settings govern AdMob/UMP retention and deletion. There are no user accounts. Contact the email below with privacy questions or requests for deletion instructions.</p>
+</section>
+<section aria-labelledby="en-section-5"><h2 id="en-section-5">6. Children&#39;s privacy</h2>
+<p>The app is intended for general readers aged 13 and older. It is not designed or marketed for children under 13. Please contact us below with concerns or questions about children&#39;s personal information.</p>
+</section>
+<section aria-labelledby="en-section-6"><h2 id="en-section-6">7. Changes to this policy</h2>
+<p>If data categories, SDKs, or processing purposes change, we update this policy and the Google Play Data safety disclosures together. Significant changes are communicated through reasonable means, such as app update notices.</p>
+</section>
+<section aria-labelledby="en-section-7"><h2 id="en-section-7">8. Developer and contact</h2>
+<p>Developer, privacy, and app support contact</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>This page is hosted on GitHub Pages. See GitHub&#39;s privacy statement for its processing of website access information.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></p>
+</section>
+</article>
+<article class="policy" id="ko" lang="ko" data-title="개인정보처리방침">
+<h1>개인정보처리방침</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">마지막 검토일: <time datetime="2026-10-25">2026-10-25</time> · 시행일: 2026-10-25</p>
+<section aria-labelledby="ko-section-0"><h2 id="ko-section-0">1. 적용 범위</h2>
+<p>이 개인정보처리방침은 Nitro Bunny Studio의 Android 앱 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS(com.siyan.novel_reader)에 적용됩니다. 앱은 사용자가 선택한 로컬 TXT를 읽고 Android TTS로 낭독하는 오프라인 우선 도구이며, 사용자 계정이나 자체 분석&#183;크래시 수집 서비스를 제공하지 않습니다.</p>
+</section>
+<section aria-labelledby="ko-section-1"><h2 id="ko-section-1">2. 앱이 기기에 저장하는 정보</h2>
+<p>앱은 기능 제공을 위해 다음 정보를 앱 전용 저장소에 보관합니다.</p>
+<ul><li>선택한 TXT의 content URI, 표시명, 파일명, 크기, 수정 시각과 문자 인코딩</li><li>읽기 위치, 진행률, 북마크와 짧은 주변 문맥</li><li>빠른 재열기를 위한 TXT 본문의 정규화된 파싱 캐시</li><li>앱 언어&#183;테마, 전체 TXT 공통 읽기&#183;TTS 설정과 잠금 화면 미리보기 설정</li><li>Google UMP가 저장하는 광고 개인정보 선택 상태</li></ul>
+<p>원본 TXT는 읽기 전용으로 취급하며 수정하거나 삭제하지 않습니다. 문서 내용, 파일명, URI, 검색어와 북마크 발췌는 개발자 서버나 광고 요청으로 전송하지 않습니다. 사용자가 선택한 음성 엔진의 처리는 아래를 참고해 주세요.</p>
+</section>
+<section aria-labelledby="ko-section-2"><h2 id="ko-section-2">3. 광고 서비스가 처리하는 정보</h2>
+<p>라이브러리와 설정의 배너 광고에는 Google Mobile Ads SDK(AdMob)와 Google User Messaging Platform(UMP)을 사용합니다. Google은 광고 제공&#183;성과 분석&#183;부정행위 방지&#183;보안 목적으로 다음 정보를 자동 수집하고 공유할 수 있습니다.</p>
+<ul><li>IP 주소와 이를 이용해 추정한 대략적인 위치</li><li>앱 실행&#183;탭&#183;광고 조회 등 앱 및 광고 상호작용</li><li>앱&#183;SDK 실행 시간, 중단, 에너지 사용량 등 진단 정보</li><li>Android 광고 ID, App Set ID와 적용 가능한 기기&#183;계정 관련 식별자</li></ul>
+<p>이 정보는 전송 중 TLS로 암호화됩니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 지역과 관련 법령에 따라 UMP 동의 화면이 표시되고, 필요한 경우 앱 설정의 개인정보 옵션에서 선택을 관리할 수 있습니다. 동의 여부나 광고 로드 실패와 관계없이 로컬 TXT 읽기를 이용할 수 있습니다. Google의 처리에는 아래 정책과 관련 광고 약관이 적용됩니다.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li><li><a href="https://policies.google.com/technologies/ads">Google 광고 기술 안내</a></li></ul>
+</section>
+<section aria-labelledby="ko-section-3"><h2 id="ko-section-3">4. 권한과 음성 엔진</h2>
+<ul><li>파일: 시스템 파일 선택기로 부여받은 읽기 권한만 사용하며 광범위 저장소 권한을 요청하지 않습니다.</li><li>알림&#183;미디어 재생 전경 서비스: 재생 제어와 화면 꺼짐 상태의 연속 낭독에 사용합니다.</li><li>인터넷&#183;네트워크 상태: AdMob/UMP 요청에 사용합니다. 광고 식별자는 광고 제공&#183;측정&#183;부정행위 방지에 사용될 수 있습니다.</li></ul>
+<p>앱은 선택한 Android TTS 엔진에 낭독할 텍스트를 전달합니다. 오프라인 음성은 기기에서 처리되지만, 네트워크 음성을 선택하면 해당 엔진 제공업체가 텍스트를 외부에서 처리할 수 있습니다. 처리&#183;보유 조건은 해당 제공업체의 방침에 따릅니다. 문서를 기기 밖으로 보내지 않고 들으려면 오프라인 음성을 사용해 주세요.</p>
+</section>
+<section aria-labelledby="ko-section-4"><h2 id="ko-section-4">5. 보유와 삭제</h2>
+<p>로컬 기록과 설정은 앱 데이터 삭제 또는 앱 제거 시까지 보관됩니다. Android는 파싱 캐시를 먼저 정리할 수 있습니다. 최근 문서에서 항목을 제거하면 앱 기록과 파싱 캐시는 삭제되지만 원본 TXT는 유지됩니다. 설정 초기화는 전역 설정만 초기화하며 문서&#183;읽기 위치&#183;북마크는 유지합니다. AdMob/UMP 데이터의 보유&#183;삭제는 Google 정책과 사용자의 Google/Android 광고 설정에 따릅니다. 사용자 계정은 없으며 개인정보 및 삭제 방법 문의는 아래 이메일로 접수할 수 있습니다.</p>
+</section>
+<section aria-labelledby="ko-section-5"><h2 id="ko-section-5">6. 아동의 개인정보</h2>
+<p>이 앱은 13세 이상 일반 독자를 대상으로 하며, 13세 미만 아동을 대상으로 설계하거나 홍보하지 않습니다. 아동의 개인정보 처리에 관한 우려나 문의는 아래 연락처로 접수해 주세요.</p>
+</section>
+<section aria-labelledby="ko-section-6"><h2 id="ko-section-6">7. 방침 변경</h2>
+<p>수집 항목&#183;SDK&#183;처리 목적이 바뀌면 앱과 Google Play에 게시한 방침 및 데이터 보안 답변을 함께 갱신합니다. 중요한 변경은 앱 업데이트 안내 등 합리적인 방법으로 알립니다.</p>
+</section>
+<section aria-labelledby="ko-section-7"><h2 id="ko-section-7">8. 개발자 및 문의</h2>
+<p>개발자 및 개인정보&#183;앱 지원 문의</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>이 페이지는 GitHub Pages에서 제공됩니다. 웹사이트 접속 정보 처리에는 GitHub 개인정보처리방침을 참고해 주세요.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a></p>
+</section>
+</article>
+<article class="policy" id="ja" lang="ja" data-title="プライバシーポリシー">
+<h1>プライバシーポリシー</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">最終確認日: <time datetime="2026-10-25">2026-10-25</time> · 施行日: 2026-10-25</p>
+<section aria-labelledby="ja-section-0"><h2 id="ja-section-0">1. 適用範囲</h2>
+<p>本方針は、Nitro Bunny StudioのAndroidアプリ「소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS」（com.siyan.novel_reader）に適用されます。本アプリは、選択したローカルTXTファイルを読み、Android TTSで読み上げるオフライン優先のツールです。ユーザーアカウントや開発者独自の解析・クラッシュ収集サービスはありません。</p>
+</section>
+<section aria-labelledby="ja-section-1"><h2 id="ja-section-1">2. 端末に保存する情報</h2>
+<p>機能の提供のため、アプリ専用ストレージに以下を保存します。</p>
+<ul><li>選択したTXTのcontent URI、表示名、ファイル名、サイズ、更新日時、文字エンコーディング</li><li>読書位置、進捗、ブックマークと短い前後のテキスト</li><li>再表示を高速化するための、正規化・解析済みTXT本文のキャッシュ</li><li>アプリの言語・テーマ、全TXT共通の読書・TTS設定、ロック画面のプレビュー設定</li><li>Google UMPが保存する広告のプライバシー選択</li></ul>
+<p>元のTXTは読み取り専用で、編集・削除しません。本文、ファイル名、URI、検索語、ブックマークの抜粋を開発者サーバーや広告リクエストに送信しません。選択した音声エンジンによる処理は下記をご覧ください。</p>
+</section>
+<section aria-labelledby="ja-section-2"><h2 id="ja-section-2">3. 広告サービスが処理する情報</h2>
+<p>ライブラリと設定画面のバナーには、Google Mobile Ads SDK（AdMob）とGoogle User Messaging Platform（UMP）を使用します。Googleは広告配信、効果測定、不正防止、セキュリティのため、以下を自動的に収集・共有することがあります。</p>
+<ul><li>IPアドレスと、それから推定したおおよその位置</li><li>起動、タップ、広告表示などのアプリ・広告の操作情報</li><li>アプリ・SDKの実行時間、中断、電力使用量などの診断情報</li><li>Android広告ID、App Set ID、該当する端末・アカウント関連の識別子</li></ul>
+<p>これらの情報はTLSにより転送中に暗号化されます。広告IDはAndroid設定でリセット・削除できます。地域や適用要件に応じてUMP同意画面が表示され、必要な場合はアプリ設定のプライバシーオプションで選択を管理できます。同意の有無や広告読み込みの失敗にかかわらず、ローカルTXTを読むことができます。Googleによる処理には下記の方針と関連する広告規約が適用されます。</p>
+<ul><li><a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a></li><li><a href="https://policies.google.com/technologies/ads">Googleの広告技術について</a></li></ul>
+</section>
+<section aria-labelledby="ja-section-3"><h2 id="ja-section-3">4. 権限と音声エンジン</h2>
+<ul><li>ファイル：システムのファイル選択画面で付与された読み取り権限のみを使用し、広範なストレージ権限は要求しません。</li><li>通知・メディア再生用フォアグラウンドサービス：再生操作と画面消灯中の連続読み上げに使用します。</li><li>インターネット・ネットワーク状態：AdMob/UMPのリクエストに使用します。広告識別子は広告配信、測定、不正防止に使用されることがあります。</li></ul>
+<p>本アプリは、読み上げるテキストを選択したAndroid TTSエンジンに渡します。オフライン音声は端末内で処理しますが、ネットワーク音声を選択するとエンジン提供者が外部でテキストを処理する場合があります。処理・保存には提供者の方針が適用されます。文書を端末外に送信せずに聴くにはオフライン音声を選択してください。</p>
+</section>
+<section aria-labelledby="ja-section-4"><h2 id="ja-section-4">5. 保存期間と削除</h2>
+<p>ローカル記録と設定は、アプリデータの消去またはアンインストールまで保存されます。解析キャッシュはAndroidが先に消去する場合があります。最近の文書から項目を削除すると、アプリ内記録と解析キャッシュが削除され、元のTXTは残ります。設定のリセットは全体設定のみを初期化し、文書、読書位置、ブックマークは保持します。AdMob/UMPデータの保存・削除はGoogleの方針とGoogle/Android広告設定に従います。ユーザーアカウントはありません。プライバシーや削除方法に関するお問い合わせは下記のメールで受け付けます。</p>
+</section>
+<section aria-labelledby="ja-section-5"><h2 id="ja-section-5">6. お子様のプライバシー</h2>
+<p>本アプリは13歳以上の一般読者を対象とし、13歳未満のお子様向けに設計・宣伝していません。お子様の個人情報に関する懸念やお問い合わせは、下記にご連絡ください。</p>
+</section>
+<section aria-labelledby="ja-section-6"><h2 id="ja-section-6">7. 本方針の変更</h2>
+<p>収集項目、SDK、処理目的が変わる場合、本方針とGoogle Playのデータセーフティ開示を併せて更新します。重要な変更はアプリ更新のお知らせなどの合理的な方法で通知します。</p>
+</section>
+<section aria-labelledby="ja-section-7"><h2 id="ja-section-7">8. 開発者と連絡先</h2>
+<p>開発者・プライバシー・アプリサポートの連絡先</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>このページはGitHub Pagesで提供されています。ウェブサイトへのアクセス情報の処理については、GitHubのプライバシーに関する声明をご覧ください。</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a></p>
+</section>
+</article>
+<article class="policy" id="th" lang="th" data-title="นโยบายความเป็นส่วนตัว">
+<h1>นโยบายความเป็นส่วนตัว</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">ตรวจสอบล่าสุด: <time datetime="2026-10-25">2026-10-25</time> · วันที่มีผลบังคับใช้: 2026-10-25</p>
+<section aria-labelledby="th-section-0"><h2 id="th-section-0">1. ขอบเขต</h2>
+<p>นโยบายนี้ใช้กับแอป Android ของ Nitro Bunny Studio ชื่อ 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS (com.siyan.novel_reader) แอปเป็นเครื่องมือที่เน้นการทำงานออฟไลน์สำหรับอ่านไฟล์ TXT ในอุปกรณ์ที่คุณเลือก และฟังผ่าน Android TTS ไม่มีบัญชีผู้ใช้ บริการวิเคราะห์ หรือบริการรวบรวมข้อมูลข้อขัดข้องที่ผู้พัฒนาดำเนินการเอง</p>
+</section>
+<section aria-labelledby="th-section-1"><h2 id="th-section-1">2. ข้อมูลที่จัดเก็บในอุปกรณ์</h2>
+<p>แอปจัดเก็บข้อมูลต่อไปนี้ในพื้นที่จัดเก็บเฉพาะของแอปเพื่อให้บริการฟังก์ชันต่าง ๆ:</p>
+<ul><li>content URI ชื่อที่แสดง ชื่อไฟล์ ขนาด เวลาแก้ไข และการเข้ารหัสอักขระของ TXT ที่เลือก</li><li>ตำแหน่งการอ่าน ความคืบหน้า บุ๊กมาร์ก และข้อความบริบทสั้น ๆ</li><li>แคชเนื้อหา TXT ที่ผ่านการปรับรูปแบบและแยกวิเคราะห์เพื่อเปิดซ้ำได้เร็วขึ้น</li><li>ภาษาและธีมของแอป การตั้งค่าการอ่านและ TTS ร่วมกันสำหรับ TXT ทั้งหมด และการแสดงตัวอย่างบนหน้าจอล็อก</li><li>ตัวเลือกความเป็นส่วนตัวด้านโฆษณาที่ Google UMP จัดเก็บ</li></ul>
+<p>ไฟล์ TXT ต้นฉบับเป็นแบบอ่านอย่างเดียวและจะไม่ถูกแก้ไขหรือลบ เนื้อหาเอกสาร ชื่อไฟล์ URI คำค้นหา และข้อความคัดย่อในบุ๊กมาร์กจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ของผู้พัฒนาหรือในคำขอโฆษณา โปรดดูการประมวลผลโดยเครื่องมืออ่านออกเสียงที่คุณเลือกด้านล่าง</p>
+</section>
+<section aria-labelledby="th-section-2"><h2 id="th-section-2">3. ข้อมูลที่บริการโฆษณาประมวลผล</h2>
+<p>แบนเนอร์ในคลังและการตั้งค่าใช้ Google Mobile Ads SDK (AdMob) และ Google User Messaging Platform (UMP) Google อาจรวบรวมและแชร์ข้อมูลต่อไปนี้โดยอัตโนมัติเพื่อแสดงโฆษณา วัดประสิทธิภาพ ป้องกันการฉ้อโกง และรักษาความปลอดภัย:</p>
+<ul><li>ที่อยู่ IP และตำแหน่งโดยประมาณที่อนุมานจาก IP</li><li>การโต้ตอบกับแอปและโฆษณา เช่น การเปิดแอป การแตะ และการดูโฆษณา</li><li>ข้อมูลวินิจฉัย เช่น ระยะเวลาทำงานของแอปหรือ SDK การหยุดชะงัก และการใช้พลังงาน</li><li>รหัสโฆษณา Android, App Set ID และตัวระบุที่เกี่ยวข้องกับอุปกรณ์หรือบัญชีตามที่ใช้ได้</li></ul>
+<p>ข้อมูลนี้เข้ารหัสระหว่างส่งด้วย TLS คุณสามารถรีเซ็ตหรือลบรหัสโฆษณาได้ในการตั้งค่า Android หน้าขอความยินยอม UMP จะแสดงตามภูมิภาคและข้อกำหนดที่ใช้บังคับ และเมื่อจำเป็น คุณสามารถจัดการตัวเลือกได้ในตัวเลือกความเป็นส่วนตัวในการตั้งค่าแอป การอ่าน TXT ในอุปกรณ์ยังใช้งานได้ไม่ว่าจะให้ความยินยอมหรือโหลดโฆษณาสำเร็จหรือไม่ การประมวลผลของ Google อยู่ภายใต้นโยบายด้านล่างและข้อกำหนดโฆษณาที่เกี่ยวข้อง</p>
+<ul><li><a href="https://policies.google.com/privacy">นโยบายความเป็นส่วนตัวของ Google</a></li><li><a href="https://policies.google.com/technologies/ads">การใช้เทคโนโลยีโฆษณาของ Google</a></li></ul>
+</section>
+<section aria-labelledby="th-section-3"><h2 id="th-section-3">4. สิทธิ์และเครื่องมืออ่านออกเสียง</h2>
+<ul><li>ไฟล์: ใช้เฉพาะสิทธิ์อ่านที่ได้รับผ่านตัวเลือกไฟล์ของระบบ โดยไม่ขอสิทธิ์เข้าถึงพื้นที่จัดเก็บแบบกว้าง</li><li>การแจ้งเตือนและบริการเล่นสื่อเบื้องหน้า: ใช้ควบคุมการเล่นและอ่านออกเสียงต่อเนื่องขณะปิดหน้าจอ</li><li>อินเทอร์เน็ตและสถานะเครือข่าย: ใช้สำหรับคำขอ AdMob/UMP ตัวระบุโฆษณาอาจใช้ในการแสดงโฆษณา การวัดผล และการป้องกันการฉ้อโกง</li></ul>
+<p>แอปส่งข้อความไปยังเครื่องมือ Android TTS ที่คุณเลือกเพื่ออ่านออกเสียง เสียงออฟไลน์ประมวลผลบนอุปกรณ์ แต่หากเลือกเสียงที่ต้องใช้เครือข่าย ผู้ให้บริการเครื่องมืออาจประมวลผลข้อความภายนอกอุปกรณ์ การประมวลผลและการเก็บรักษาอยู่ภายใต้นโยบายของผู้ให้บริการนั้น หากไม่ต้องการส่งข้อความเอกสารออกจากอุปกรณ์ โปรดเลือกเสียงออฟไลน์</p>
+</section>
+<section aria-labelledby="th-section-4"><h2 id="th-section-4">5. การเก็บรักษาและการลบ</h2>
+<p>บันทึกและการตั้งค่าในอุปกรณ์จะคงอยู่จนกว่าจะล้างข้อมูลแอปหรือถอนการติดตั้ง Android อาจล้างแคชที่แยกวิเคราะห์ก่อนหน้านั้น การนำเอกสารออกจากรายการล่าสุดจะลบบันทึกและแคชของแอป แต่เก็บ TXT ต้นฉบับไว้ การรีเซ็ตการตั้งค่าจะรีเซ็ตเฉพาะการตั้งค่าส่วนกลางและเก็บเอกสาร ตำแหน่งอ่าน และบุ๊กมาร์กไว้ การเก็บรักษาและการลบข้อมูล AdMob/UMP เป็นไปตามนโยบาย Google และการตั้งค่าโฆษณา Google/Android ของคุณ ไม่มีบัญชีผู้ใช้ โปรดติดต่ออีเมลด้านล่างหากมีคำถามเรื่องความเป็นส่วนตัวหรือต้องการวิธีลบข้อมูล</p>
+</section>
+<section aria-labelledby="th-section-5"><h2 id="th-section-5">6. ความเป็นส่วนตัวของเด็ก</h2>
+<p>แอปนี้สำหรับผู้อ่านทั่วไปอายุ 13 ปีขึ้นไป ไม่ได้ออกแบบหรือทำการตลาดสำหรับเด็กอายุต่ำกว่า 13 ปี หากมีข้อกังวลหรือคำถามเกี่ยวกับข้อมูลส่วนบุคคลของเด็ก โปรดติดต่อด้านล่าง</p>
+</section>
+<section aria-labelledby="th-section-6"><h2 id="th-section-6">7. การเปลี่ยนแปลงนโยบาย</h2>
+<p>หากประเภทข้อมูล SDK หรือวัตถุประสงค์การประมวลผลเปลี่ยนแปลง เราจะปรับปรุงนโยบายนี้และการเปิดเผยความปลอดภัยของข้อมูลบน Google Play พร้อมกัน การเปลี่ยนแปลงสำคัญจะแจ้งด้วยวิธีที่เหมาะสม เช่น ประกาศการอัปเดตแอป</p>
+</section>
+<section aria-labelledby="th-section-7"><h2 id="th-section-7">8. ผู้พัฒนาและข้อมูลติดต่อ</h2>
+<p>ติดต่อผู้พัฒนา เรื่องความเป็นส่วนตัว และฝ่ายสนับสนุนแอป</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>หน้านี้ให้บริการโดย GitHub Pages โปรดดูคำชี้แจงความเป็นส่วนตัวของ GitHub สำหรับการประมวลผลข้อมูลการเข้าถึงเว็บไซต์</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">คำชี้แจงความเป็นส่วนตัวของ GitHub</a></p>
+</section>
+</article>
+<article class="policy" id="fr" lang="fr" data-title="Politique de confidentialit&#233;">
+<h1>Politique de confidentialit&#233;</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">Derni&#232;re r&#233;vision: <time datetime="2026-10-25">2026-10-25</time> · Date d’entr&#233;e en vigueur: 2026-10-25</p>
+<section aria-labelledby="fr-section-0"><h2 id="fr-section-0">1. Champ d’application</h2>
+<p>Cette politique concerne l’application Android de Nitro Bunny Studio 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS (com.siyan.novel_reader). Cet outil privil&#233;gie le fonctionnement hors ligne pour lire les fichiers TXT locaux que vous s&#233;lectionnez et les &#233;couter avec la synth&#232;se vocale Android. Il ne propose ni compte utilisateur, ni service d’analyse ou de collecte de rapports de plantage exploit&#233; par le d&#233;veloppeur.</p>
+</section>
+<section aria-labelledby="fr-section-1"><h2 id="fr-section-1">2. Informations conserv&#233;es sur votre appareil</h2>
+<p>Pour fournir ses fonctionnalit&#233;s, l’application conserve dans son espace de stockage d&#233;di&#233; :</p>
+<ul><li>Les URI de contenu, noms affich&#233;s, noms de fichiers, tailles, dates de modification et encodages des TXT s&#233;lectionn&#233;s</li><li>Les positions et la progression de lecture, les signets et de courts extraits de contexte</li><li>Un cache normalis&#233; et analys&#233; du texte TXT pour acc&#233;l&#233;rer la r&#233;ouverture</li><li>La langue et le th&#232;me, les pr&#233;f&#233;rences communes de lecture et de synth&#232;se vocale, et l’aper&#231;u sur l’&#233;cran verrouill&#233;</li><li>Les choix de confidentialit&#233; publicitaire enregistr&#233;s par Google UMP</li></ul>
+<p>Les TXT d’origine sont en lecture seule et ne sont ni modifi&#233;s ni supprim&#233;s. Le contenu des documents, les noms de fichiers, URI, recherches et extraits de signets ne sont pas envoy&#233;s &#224; un serveur du d&#233;veloppeur ni dans les demandes publicitaires. Le traitement par le moteur vocal choisi est d&#233;crit ci-dessous.</p>
+</section>
+<section aria-labelledby="fr-section-2"><h2 id="fr-section-2">3. Informations trait&#233;es par les services publicitaires</h2>
+<p>Les banni&#232;res de la biblioth&#232;que et des param&#232;tres utilisent Google Mobile Ads SDK (AdMob) et Google User Messaging Platform (UMP). Google peut collecter et partager automatiquement les donn&#233;es suivantes pour diffuser et mesurer les publicit&#233;s, pr&#233;venir la fraude et assurer la s&#233;curit&#233; :</p>
+<ul><li>L’adresse IP et la localisation approximative qui en est d&#233;duite</li><li>Les interactions avec l’application et les annonces : lancements, pressions et vues publicitaires</li><li>Les diagnostics : dur&#233;e d’ex&#233;cution de l’application ou du SDK, interruptions et consommation d’&#233;nergie</li><li>L’identifiant publicitaire Android, App Set ID et les identifiants applicables li&#233;s &#224; l’appareil ou au compte</li></ul>
+<p>Ces informations sont chiffr&#233;es en transit par TLS. L’identifiant publicitaire peut &#234;tre r&#233;initialis&#233; ou supprim&#233; dans les param&#232;tres Android. Les messages de consentement UMP sont affich&#233;s selon la r&#233;gion et les exigences applicables ; si n&#233;cessaire, les options de confidentialit&#233; des param&#232;tres permettent de g&#233;rer vos choix. La lecture locale des TXT reste disponible quel que soit le consentement ou en cas d’&#233;chec du chargement publicitaire. Le traitement par Google rel&#232;ve des politiques ci-dessous et des conditions publicitaires applicables.</p>
+<ul><li><a href="https://policies.google.com/privacy">R&#232;gles de confidentialit&#233; de Google</a></li><li><a href="https://policies.google.com/technologies/ads">Technologies publicitaires de Google</a></li></ul>
+</section>
+<section aria-labelledby="fr-section-3"><h2 id="fr-section-3">4. Autorisations et moteurs vocaux</h2>
+<ul><li>Fichiers : seul l’acc&#232;s en lecture accord&#233; par le s&#233;lecteur syst&#232;me est utilis&#233; ; aucune autorisation g&#233;n&#233;rale de stockage n’est demand&#233;e.</li><li>Notifications et service de lecture multim&#233;dia au premier plan : commandes de lecture et synth&#232;se continue lorsque l’&#233;cran est &#233;teint.</li><li>Internet et &#233;tat du r&#233;seau : demandes AdMob/UMP. Les identifiants publicitaires peuvent servir &#224; la diffusion, &#224; la mesure et &#224; la pr&#233;vention de la fraude.</li></ul>
+<p>L’application transmet le texte &#224; votre moteur Android TTS pour la lecture vocale. Les voix hors ligne le traitent sur l’appareil ; une voix r&#233;seau peut entra&#238;ner un traitement externe par le fournisseur du moteur. Sa politique r&#233;git le traitement et la conservation. Choisissez une voix hors ligne pour &#233;couter sans envoyer le texte hors de l’appareil.</p>
+</section>
+<section aria-labelledby="fr-section-4"><h2 id="fr-section-4">5. Conservation et suppression</h2>
+<p>Les donn&#233;es locales et param&#232;tres restent jusqu’&#224; l’effacement des donn&#233;es ou la d&#233;sinstallation. Android peut vider le cache analys&#233; plus t&#244;t. Retirer un document r&#233;cent supprime son historique dans l’application et son cache, mais conserve le TXT source. R&#233;initialiser les param&#232;tres ne r&#233;initialise que les pr&#233;f&#233;rences globales et conserve documents, positions et signets. La conservation et la suppression des donn&#233;es AdMob/UMP d&#233;pendent des politiques Google et de vos param&#232;tres publicitaires Google/Android. Il n’existe aucun compte utilisateur. L’adresse ci-dessous re&#231;oit les questions de confidentialit&#233; et demandes d’instructions de suppression.</p>
+</section>
+<section aria-labelledby="fr-section-5"><h2 id="fr-section-5">6. Confidentialit&#233; des enfants</h2>
+<p>L’application s’adresse aux lecteurs de 13 ans et plus. Elle n’est ni con&#231;ue ni commercialis&#233;e pour les moins de 13 ans. Contactez-nous ci-dessous pour toute question ou pr&#233;occupation concernant les donn&#233;es personnelles des enfants.</p>
+</section>
+<section aria-labelledby="fr-section-6"><h2 id="fr-section-6">7. Modifications de cette politique</h2>
+<p>Si les cat&#233;gories de donn&#233;es, SDK ou finalit&#233;s changent, cette politique et les d&#233;clarations de s&#233;curit&#233; des donn&#233;es Google Play sont mises &#224; jour ensemble. Les changements importants sont annonc&#233;s par des moyens raisonnables, tels que les notes de mise &#224; jour.</p>
+</section>
+<section aria-labelledby="fr-section-7"><h2 id="fr-section-7">8. D&#233;veloppeur et contact</h2>
+<p>D&#233;veloppeur, confidentialit&#233; et assistance</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>Cette page est h&#233;berg&#233;e sur GitHub Pages. Consultez la d&#233;claration de confidentialit&#233; de GitHub pour le traitement des informations d’acc&#232;s au site.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">D&#233;claration de confidentialit&#233; de GitHub</a></p>
+</section>
+</article>
+<article class="policy" id="de" lang="de" data-title="Datenschutzerkl&#228;rung">
+<h1>Datenschutzerkl&#228;rung</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">Zuletzt gepr&#252;ft: <time datetime="2026-10-25">2026-10-25</time> · G&#252;ltig ab: 2026-10-25</p>
+<section aria-labelledby="de-section-0"><h2 id="de-section-0">1. Geltungsbereich</h2>
+<p>Diese Erkl&#228;rung gilt f&#252;r die Android-App 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS (com.siyan.novel_reader) von Nitro Bunny Studio. Die App ist ein vorrangig offline nutzbares Werkzeug zum Lesen ausgew&#228;hlter lokaler TXT-Dateien und zum Vorlesen mit Android TTS. Es gibt keine Benutzerkonten und keinen vom Entwickler betriebenen Analyse- oder Absturzdatendienst.</p>
+</section>
+<section aria-labelledby="de-section-1"><h2 id="de-section-1">2. Auf Ihrem Ger&#228;t gespeicherte Informationen</h2>
+<p>F&#252;r die Funktionen speichert die App folgende Informationen im app-eigenen Speicher:</p>
+<ul><li>Content-URIs, Anzeigenamen, Dateinamen, Gr&#246;&#223;en, &#196;nderungszeiten und Zeichenkodierungen ausgew&#228;hlter TXT-Dateien</li><li>Lesepositionen, Fortschritt, Lesezeichen und kurze Textstellen aus dem Kontext</li><li>Einen normalisierten, aufbereiteten TXT-Cache zum schnelleren erneuten &#214;ffnen</li><li>App-Sprache und Design, gemeinsame Lese- und TTS-Einstellungen sowie die Sperrbildschirmvorschau</li><li>Von Google UMP gespeicherte Werbedatenschutzentscheidungen</li></ul>
+<p>Die TXT-Originale werden nur gelesen und weder ge&#228;ndert noch gel&#246;scht. Dokumenttexte, Dateinamen, URIs, Suchbegriffe und Lesezeichenausz&#252;ge werden weder an Entwicklerserver noch in Werbeanfragen gesendet. Zur Verarbeitung durch den gew&#228;hlten Sprachdienst siehe unten.</p>
+</section>
+<section aria-labelledby="de-section-2"><h2 id="de-section-2">3. Durch Werbedienste verarbeitete Informationen</h2>
+<p>Banner in Bibliothek und Einstellungen verwenden das Google Mobile Ads SDK (AdMob) und die Google User Messaging Platform (UMP). F&#252;r Werbung, Erfolgsmessung, Betrugspr&#228;vention und Sicherheit kann Google folgende Informationen automatisch erheben und weitergeben:</p>
+<ul><li>IP-Adressen und daraus abgeleitete ungef&#228;hre Standorte</li><li>App- und Werbeinteraktionen wie Starts, Tippen und Anzeigenaufrufe</li><li>Diagnosedaten wie App-/SDK-Laufzeit, Unterbrechungen und Energieverbrauch</li><li>Android-Werbe-ID, App Set ID und gegebenenfalls ger&#228;te- oder kontobezogene Kennungen</li></ul>
+<p>Die Daten werden bei der &#220;bertragung mit TLS verschl&#252;sselt. Die Werbe-ID l&#228;sst sich in den Android-Einstellungen zur&#252;cksetzen oder l&#246;schen. UMP-Einwilligungsdialoge erscheinen abh&#228;ngig von Region und geltenden Anforderungen; soweit erforderlich k&#246;nnen Sie Ihre Auswahl &#252;ber die Datenschutzoptionen in den App-Einstellungen verwalten. Lokale TXT-Dateien bleiben unabh&#228;ngig von Einwilligung oder Werbeladefehlern lesbar. F&#252;r Googles Verarbeitung gelten die nachstehenden Richtlinien und einschl&#228;gigen Werbebedingungen.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google-Datenschutzerkl&#228;rung</a></li><li><a href="https://policies.google.com/technologies/ads">Googles Werbetechnologien</a></li></ul>
+</section>
+<section aria-labelledby="de-section-3"><h2 id="de-section-3">4. Berechtigungen und Sprachdienste</h2>
+<ul><li>Dateien: nur die vom System-Dateiauswahldialog gew&#228;hrte Leseberechtigung; kein allgemeiner Speicherzugriff wird angefordert.</li><li>Benachrichtigungen und Vordergrunddienst f&#252;r Medienwiedergabe: Wiedergabesteuerung und kontinuierliches Vorlesen bei ausgeschaltetem Bildschirm.</li><li>Internet und Netzwerkstatus: f&#252;r AdMob-/UMP-Anfragen. Werbekennungen k&#246;nnen f&#252;r Werbung, Messung und Betrugspr&#228;vention genutzt werden.</li></ul>
+<p>Die App &#252;bergibt vorzulesenden Text an Ihre ausgew&#228;hlte Android-TTS-Engine. Offline-Stimmen verarbeiten ihn auf dem Ger&#228;t; bei einer Netzwerkstimme kann der Anbieter Text au&#223;erhalb des Ger&#228;ts verarbeiten. Verarbeitung und Speicherung richten sich nach dessen Richtlinien. W&#228;hlen Sie eine Offline-Stimme, um ohne &#220;bertragung von Dokumenttexten zu h&#246;ren.</p>
+</section>
+<section aria-labelledby="de-section-4"><h2 id="de-section-4">5. Speicherung und L&#246;schung</h2>
+<p>Lokale Eintr&#228;ge und Einstellungen bleiben bis zum L&#246;schen der App-Daten oder zur Deinstallation gespeichert. Android kann den aufbereiteten Cache fr&#252;her entfernen. Das Entfernen eines zuletzt gelesenen Dokuments l&#246;scht App-Eintr&#228;ge und Cache, bewahrt aber die TXT-Quelldatei. Das Zur&#252;cksetzen setzt nur globale Einstellungen zur&#252;ck und erh&#228;lt Dokumente, Lesepositionen und Lesezeichen. F&#252;r AdMob-/UMP-Speicherung und -L&#246;schung gelten Google-Richtlinien und Ihre Google-/Android-Werbeeinstellungen. Benutzerkonten gibt es nicht. Fragen zum Datenschutz oder zur L&#246;schung richten Sie bitte an die unten genannte Adresse.</p>
+</section>
+<section aria-labelledby="de-section-5"><h2 id="de-section-5">6. Datenschutz von Kindern</h2>
+<p>Die App richtet sich an allgemeine Leser ab 13 Jahren. Sie ist nicht f&#252;r Kinder unter 13 konzipiert und wird nicht f&#252;r diese beworben. Bei Fragen oder Bedenken zu personenbezogenen Daten von Kindern kontaktieren Sie uns bitte unten.</p>
+</section>
+<section aria-labelledby="de-section-6"><h2 id="de-section-6">7. &#196;nderungen dieser Erkl&#228;rung</h2>
+<p>Bei &#196;nderungen von Datenkategorien, SDKs oder Zwecken aktualisieren wir diese Erkl&#228;rung und die Google-Play-Angaben zur Datensicherheit gemeinsam. Wesentliche &#196;nderungen teilen wir auf angemessene Weise mit, etwa in Update-Hinweisen.</p>
+</section>
+<section aria-labelledby="de-section-7"><h2 id="de-section-7">8. Entwickler und Kontakt</h2>
+<p>Kontakt f&#252;r Entwickler, Datenschutz und App-Support</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>Diese Seite wird auf GitHub Pages gehostet. Informationen zur Verarbeitung von Website-Zugriffsdaten finden Sie in der Datenschutzerkl&#228;rung von GitHub.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerkl&#228;rung</a></p>
+</section>
+</article>
+<article class="policy" id="es" lang="es" data-title="Pol&#237;tica de privacidad">
+<h1>Pol&#237;tica de privacidad</h1><p class="app-name">소설 리더 - TXT·TTS / Novel Reader - TXT &amp; TTS</p>
+<p class="date">&#218;ltima revisi&#243;n: <time datetime="2026-10-25">2026-10-25</time> · Fecha de entrada en vigor: 2026-10-25</p>
+<section aria-labelledby="es-section-0"><h2 id="es-section-0">1. &#193;mbito de aplicaci&#243;n</h2>
+<p>Esta pol&#237;tica se aplica a la aplicaci&#243;n Android de Nitro Bunny Studio 소설 리더 - TXT&#183;TTS / Novel Reader - TXT &amp; TTS (com.siyan.novel_reader). Es una herramienta que prioriza el uso sin conexi&#243;n para leer archivos TXT locales seleccionados por usted y escucharlos con Android TTS. No tiene cuentas de usuario ni servicios de an&#225;lisis o recopilaci&#243;n de fallos operados por el desarrollador.</p>
+</section>
+<section aria-labelledby="es-section-1"><h2 id="es-section-1">2. Informaci&#243;n almacenada en el dispositivo</h2>
+<p>Para ofrecer sus funciones, la aplicaci&#243;n guarda en su almacenamiento espec&#237;fico:</p>
+<ul><li>Los URI de contenido, nombres visibles, nombres de archivo, tama&#241;os, fechas de modificaci&#243;n y codificaciones de los TXT seleccionados</li><li>Las posiciones y el progreso de lectura, marcadores y breves fragmentos de contexto</li><li>Una cach&#233; normalizada y analizada del texto TXT para agilizar la reapertura</li><li>El idioma y tema, preferencias compartidas de lectura y TTS, y ajustes de vista previa en la pantalla de bloqueo</li><li>Las decisiones de privacidad publicitaria guardadas por Google UMP</li></ul>
+<p>Los TXT originales se tratan como de solo lectura y no se modifican ni eliminan. El contenido, nombres de archivo, URI, b&#250;squedas y extractos de marcadores no se env&#237;an a servidores del desarrollador ni en solicitudes publicitarias. El tratamiento por el motor de voz elegido se explica m&#225;s abajo.</p>
+</section>
+<section aria-labelledby="es-section-2"><h2 id="es-section-2">3. Informaci&#243;n tratada por servicios publicitarios</h2>
+<p>Los banners de la biblioteca y los ajustes usan Google Mobile Ads SDK (AdMob) y Google User Messaging Platform (UMP). Google puede recopilar y compartir autom&#225;ticamente la siguiente informaci&#243;n para publicidad, medici&#243;n de resultados, prevenci&#243;n del fraude y seguridad:</p>
+<ul><li>Direcciones IP y ubicaci&#243;n aproximada deducida de ellas</li><li>Interacciones con la aplicaci&#243;n y los anuncios, como aperturas, pulsaciones y visualizaciones</li><li>Diagn&#243;sticos, como tiempo de ejecuci&#243;n de la aplicaci&#243;n o SDK, interrupciones y consumo energ&#233;tico</li><li>ID de publicidad de Android, App Set ID e identificadores aplicables relacionados con dispositivos o cuentas</li></ul>
+<p>Esta informaci&#243;n se cifra en tr&#225;nsito mediante TLS. Puede restablecer o eliminar el ID de publicidad en los ajustes de Android. Los mensajes de consentimiento UMP aparecen seg&#250;n la regi&#243;n y los requisitos aplicables; cuando corresponda, puede gestionar sus decisiones desde las opciones de privacidad de los ajustes. La lectura local sigue disponible independientemente del consentimiento o de los fallos al cargar anuncios. El tratamiento de Google se rige por las pol&#237;ticas siguientes y las condiciones publicitarias aplicables.</p>
+<ul><li><a href="https://policies.google.com/privacy">Pol&#237;tica de privacidad de Google</a></li><li><a href="https://policies.google.com/technologies/ads">Tecnolog&#237;as publicitarias de Google</a></li></ul>
+</section>
+<section aria-labelledby="es-section-3"><h2 id="es-section-3">4. Permisos y motores de voz</h2>
+<ul><li>Archivos: solo se usa el permiso de lectura concedido por el selector del sistema; no se solicita acceso general al almacenamiento.</li><li>Notificaciones y servicio de reproducci&#243;n multimedia en primer plano: para controles y lectura continua con la pantalla apagada.</li><li>Internet y estado de red: para solicitudes AdMob/UMP. Los identificadores publicitarios pueden usarse para anuncios, medici&#243;n y prevenci&#243;n del fraude.</li></ul>
+<p>La aplicaci&#243;n entrega el texto al motor Android TTS seleccionado para leerlo en voz alta. Las voces sin conexi&#243;n lo procesan en el dispositivo; si elige una voz de red, el proveedor puede procesarlo externamente. Su pol&#237;tica rige el tratamiento y la conservaci&#243;n. Elija una voz sin conexi&#243;n para escuchar sin enviar texto fuera del dispositivo.</p>
+</section>
+<section aria-labelledby="es-section-4"><h2 id="es-section-4">5. Conservaci&#243;n y eliminaci&#243;n</h2>
+<p>Los registros y ajustes locales permanecen hasta que borre los datos o desinstale la aplicaci&#243;n. Android puede limpiar antes la cach&#233; analizada. Quitar un documento reciente elimina sus registros y cach&#233;, pero conserva el TXT original. Restablecer los ajustes solo reinicia las preferencias globales y conserva documentos, posiciones y marcadores. La conservaci&#243;n y eliminaci&#243;n de datos AdMob/UMP dependen de las pol&#237;ticas de Google y sus ajustes publicitarios Google/Android. No hay cuentas de usuario. Para consultas de privacidad o instrucciones de eliminaci&#243;n, contacte con el correo indicado abajo.</p>
+</section>
+<section aria-labelledby="es-section-5"><h2 id="es-section-5">6. Privacidad de los menores</h2>
+<p>La aplicaci&#243;n est&#225; dirigida a lectores generales de 13 a&#241;os o m&#225;s. No est&#225; dise&#241;ada ni se promociona para menores de 13 a&#241;os. Cont&#225;ctenos abajo si tiene dudas o inquietudes sobre datos personales de menores.</p>
+</section>
+<section aria-labelledby="es-section-6"><h2 id="es-section-6">7. Cambios en esta pol&#237;tica</h2>
+<p>Si cambian las categor&#237;as de datos, SDK o finalidades, actualizamos conjuntamente esta pol&#237;tica y las declaraciones de Seguridad de los datos de Google Play. Los cambios importantes se comunican por medios razonables, como avisos de actualizaci&#243;n.</p>
+</section>
+<section aria-labelledby="es-section-7"><h2 id="es-section-7">8. Desarrollador y contacto</h2>
+<p>Contacto del desarrollador, privacidad y soporte</p>
+<p>Nitro Bunny Studio<br><a href="mailto:nitrobunny.studio@gmail.com">nitrobunny.studio@gmail.com</a></p>
+<p>Esta p&#225;gina se aloja en GitHub Pages. Consulte su declaraci&#243;n de privacidad sobre el tratamiento de informaci&#243;n de acceso al sitio.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Declaraci&#243;n de privacidad de GitHub</a></p>
+</section>
+</article>
+</main>
+<script>
+(()=>{
+  const supported=['en','ko','ja','th','fr','de','es'];
+  function chooseLanguage(){
+    const requested=location.hash.slice(1).toLowerCase();
+    const preferred=(navigator.language||'en').split('-')[0].toLowerCase();
+    return supported.includes(requested)?requested:(supported.includes(preferred)?preferred:'en');
+  }
+  function render(){
+    const lang=chooseLanguage();
+    document.querySelectorAll('.policy').forEach(article=>{
+      const active=article.id===lang;
+      article.classList.toggle('active',active);
+      article.hidden=!active;
+      if(active)document.title=article.dataset.title+' | Nitro Bunny Studio';
+    });
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-lang]').forEach(link=>{
+      if(link.dataset.lang===lang)link.setAttribute('aria-current','true');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('hashchange',render);
+  render();
+})();
+</script></body></html>
